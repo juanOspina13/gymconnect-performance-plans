@@ -11,9 +11,9 @@ const FAQ = () => {
         'No hay penalización. Sigues recibiendo todo el valor del programa: coaching, entrenamientos, nutrición y acompañamiento. Los hitos son un incentivo adicional, no una obligación estresante.',
     },
     {
-      question: '¿Puedo cambiar de Inner Transformation a Mental Edge?',
+      question: '¿Puedo cambiar de Definitive Transformation a Mental Edge?',
       answer:
-        'Absolutamente. De hecho, es la progresión natural. Muchos usuarios comienzan con Inner Transformation para construir bases sólidas, y luego evolucionan a Mental Edge cuando están listos para más.',
+        'Absolutamente. De hecho, es la progresión natural. Muchos usuarios comienzan con Definitive Transformation para construir bases sólidas, y luego evolucionan a Mental Edge cuando están listos para más.',
     },
     {
       question: '¿Los entrenamientos son presenciales o virtuales?',
@@ -28,7 +28,7 @@ const FAQ = () => {
     {
       question: '¿Cómo sé cuál plan elegir?',
       answer:
-        'Si estás iniciando, retomando, o buscas equilibrio sin presión extrema: Inner Transformation. Si ya tienes bases, buscas ventaja competitiva y estás dispuesto a ir más profundo: Mental Edge. ¿Aún dudas? Agenda una llamada y te ayudamos a decidir.',
+        'Si estás iniciando, retomando, o buscas equilibrio sin presión extrema: Definitive Transformation. Si ya tienes bases, buscas ventaja competitiva y estás dispuesto a ir más profundo: Mental Edge. ¿Aún dudas? Agenda una llamada y te ayudamos a decidir.',
     },
   ];
 

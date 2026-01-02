@@ -6,7 +6,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold text-xl mb-4">GymConnect</h3>
             <p className="text-gray-400 text-sm">
-              Transformación integral con acompañamiento humano real.
+              Transformación integral con acompañamiento de profesionales.
             </p>
           </div>
 

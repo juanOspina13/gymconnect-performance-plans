@@ -1,3 +1,5 @@
+import { Button } from "./ui/button";
+
 const Hero = () => {
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
@@ -16,7 +18,7 @@ const Hero = () => {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Tu Transformación
             <br />
-            <span className="bg-gradient-to-r from-primary via-primary-300 to-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary text-white via-primary-300 to-primary bg-clip-text text-transparent">
               Empieza Ahora
             </span>
           </h1>
@@ -26,23 +28,25 @@ const Hero = () => {
           </p>
 
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-            Elige el plan que se adapta a tu momento de vida. Ambos con acompañamiento humano real, 
+            Elige el plan que se adapta a tu momento de vida. Ambos con acompañamiento de profesionales  
             y la posibilidad de ser <span className="text-primary font-semibold">100% GRATIS</span> al cumplir tus hitos.
           </p>
-
+            <p className="text-md text-primary font-medium mb-8 max-w-2xl mx-auto">
+            📍 Disponible solo en Pereira
+            </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="#plans"
+            <Button
+              asChild
               className="bg-primary hover:bg-primary-hover text-black font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/20"
             >
-              Ver Planes
-            </a>
-            <a
-              href="#how-it-works"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-black font-bold py-4 px-8 rounded-xl transition-all duration-300"
+              <a href="#plans">Ver Planes</a>
+            </Button>
+            <Button
+              asChild
+              className="border-2 border-primary  text-black hover:bg-primary hover:text-black font-bold py-4 px-8 rounded-xl transition-all duration-300"
             >
-              Cómo Funciona
-            </a>
+              <a href="#how-it-works">Cómo Funciona</a>
+            </Button>
           </div>
         </div>
       </div>

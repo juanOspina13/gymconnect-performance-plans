@@ -1,4 +1,15 @@
-import { FC } from 'react';
+import { useState, type FC, type ChangeEvent, type FormEvent } from "react";
+import { Button } from "./ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "./ui/dialog";
+import { Label } from "./ui/label";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 
 interface Feature {
   category: string;
@@ -11,9 +22,21 @@ interface PlanCardProps {
   title: string;
   subtitle: string;
   promise: string;
+  price: number;
+  originalPrice?: number;
   features: Feature[];
   idealFor: string[];
   isPremium?: boolean;
+}
+
+interface FormData {
+  nombre: string;
+  celular: string;
+  email: string;
+  password: string;
+  trabajo: string;
+  objetivo: string;
+  descripcion: string;
 }
 
 const PlanCard: FC<PlanCardProps> = ({
@@ -21,16 +44,60 @@ const PlanCard: FC<PlanCardProps> = ({
   title,
   subtitle,
   promise,
+  price,
+  originalPrice,
   features,
   idealFor,
   isPremium = false,
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState<FormData>({
+    nombre: "",
+    celular: "",
+    email: "",
+    password: "",
+    trabajo: "",
+    objetivo: "",
+    descripcion: "",
+  });
+
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Handle form submission here
+    console.log("Form submitted:", { plan: title, ...formData });
+
+    // TODO: Send data to your API
+    // await fetch('/api/subscribe', { method: 'POST', body: JSON.stringify({ plan: title, ...formData }) });
+
+    // Reset form and close modal
+    setFormData({
+      nombre: "",
+      celular: "",
+      email: "",
+      password: "",
+      trabajo: "",
+      objetivo: "",
+      descripcion: "",
+    });
+    setIsModalOpen(false);
+  };
+
   return (
     <div
       className={`relative rounded-3xl overflow-hidden transition-all duration-300 hover:scale-[1.02] ${
         isPremium
-          ? 'bg-gradient-to-br from-gray-800 via-gray-900 to-black border-2 border-primary/30'
-          : 'bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700'
+          ? "bg-gradient-to-br from-gray-800 via-gray-900 to-black border-2 border-primary/30"
+          : "bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700"
       }`}
     >
       {isPremium && (
@@ -38,6 +105,11 @@ const PlanCard: FC<PlanCardProps> = ({
           ULTRA EXCLUSIVO
         </div>
       )}
+      
+      {/* Location notice */}
+      <div className="absolute top-0 left-0 bg-gray-700 text-white text-xs font-medium px-3 py-1 rounded-br-xl">
+        📍 Solo Pereira
+      </div>
 
       <div className="p-8 lg:p-10">
         {/* Header */}
@@ -47,6 +119,29 @@ const PlanCard: FC<PlanCardProps> = ({
             {title}
           </h3>
           <p className="text-gray-400 text-lg">{subtitle}</p>
+        </div>
+
+        {/* Price */}
+        <div className="mb-6">
+          <div className="flex items-baseline gap-3">
+            <span className="text-5xl lg:text-6xl font-bold text-white">
+              ${price.toLocaleString()}
+            </span>
+            <span className="text-gray-400 text-lg">/mes</span>
+          </div>
+          {originalPrice && (
+            <div className="flex items-center gap-2 mt-2">
+              <span className="text-gray-500 line-through text-xl">
+                ${originalPrice.toLocaleString()}/mes
+              </span>
+              <span className="bg-green-500/20 text-green-400 text-sm font-semibold px-3 py-1 rounded-full">
+                Ahorra ${(originalPrice - price).toLocaleString()}
+              </span>
+            </div>
+          )}
+          <p className="text-sm text-gray-500 mt-2">
+            Suscripción mensual • Cancela cuando quieras
+          </p>
         </div>
 
         {/* Promise */}
@@ -86,6 +181,22 @@ const PlanCard: FC<PlanCardProps> = ({
           ))}
         </div>
 
+        {/* Fit Points Included */}
+        <div className="mb-8 p-4 bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl border border-primary/20">
+          <div className="flex items-center gap-3">
+            <div className="text-3xl">🏋️</div>
+            <div>
+              <p className="text-white font-bold text-lg">
+                165 Puntos Fit incluidos
+              </p>
+              <p className="text-gray-400 text-sm">
+                Accede a gimnasios, estudios y espacios fitness/wellness que
+                apunten a cumplir tu objetivo
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Ideal For */}
         <div className="mb-8">
           <h4 className="text-lg font-bold text-white mb-4">Ideal para:</h4>
@@ -103,20 +214,149 @@ const PlanCard: FC<PlanCardProps> = ({
         </div>
 
         {/* CTA Button */}
-        <button
+        <Button
+          onClick={() => setIsModalOpen(true)}
           className={`w-full py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 ${
             isPremium
-              ? 'bg-primary text-black hover:bg-primary-hover shadow-lg shadow-primary/20'
-              : 'bg-primary text-black hover:bg-primary-hover'
+              ? "bg-primary text-black hover:bg-primary-hover shadow-lg shadow-primary/20"
+              : "bg-primary text-black hover:bg-primary-hover"
           }`}
         >
-          {isPremium ? 'Solicitar Acceso Exclusivo' : 'Comenzar Transformación'}
-        </button>
+          {"Solicitar suscripción"}
+        </Button>
 
+        {/* Subscription Modal */}
+        <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+          <DialogContent className="bg-gray-900 border border-gray-700 text-white max-w-md">
+            <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold">
+                  Solicitar Suscripción
+                  </DialogTitle>
+                  <p className="text-sm text-yellow-400 mt-2">
+                  ⚠️ Tus datos serán evaluados y te contactaremos en un periodo máximo de 10 días. Si son aprobados, tu suscripción iniciará en ese mismo plazo.
+                  </p> 
+              <DialogDescription className="text-gray-400">
+                Completa el formulario para solicitar tu suscripción a {title}
+              </DialogDescription>
+            </DialogHeader>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="nombre" className="text-white">
+                  Nombre
+                </Label>
+                <Input
+                  id="nombre"
+                  name="nombre"
+                  value={formData.nombre}
+                  onChange={handleInputChange}
+                  placeholder="Tu nombre completo"
+                  className="bg-gray-800 border-gray-600 text-white"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="celular" className="text-white">
+                  Celular
+                </Label>
+                <Input
+                  id="celular"
+                  name="celular"
+                  value={formData.celular}
+                  onChange={handleInputChange}
+                  placeholder="Tu número de celular"
+                  className="bg-gray-800 border-gray-600 text-white"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-white">
+                  Email
+                </Label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="tu@email.com"
+                  className="bg-gray-800 border-gray-600 text-white"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="password" className="text-white">
+                  Contraseña
+                </Label>
+                <Input
+                  id="password"
+                  name="password"
+                  type="password"
+                  value={formData.password}
+                  onChange={handleInputChange}
+                  placeholder="Tu contraseña"
+                  className="bg-gray-800 border-gray-600 text-white"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="trabajo" className="text-white">
+                  Trabajo y cargo
+                </Label>
+                <Input
+                  id="trabajo"
+                  name="trabajo"
+                  value={formData.trabajo}
+                  onChange={handleInputChange}
+                  placeholder="¿En qué trabajas? ¿qué cargo desempeñas?"
+                  className="bg-gray-800 border-gray-600 text-white"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="objetivo" className="text-white">
+                  Objetivo
+                </Label>
+                <Input
+                  id="objetivo"
+                  name="objetivo"
+                  value={formData.objetivo}
+                  onChange={handleInputChange}
+                  placeholder="¿Cuál es tu objetivo fitness?"
+                  className="bg-gray-800 border-gray-600 text-white"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="descripcion" className="text-white">
+                  Cuéntanos sobre tu estilo de vida y rutina diaria
+                </Label>
+                <Textarea
+                  id="descripcion"
+                  name="descripcion"
+                  value={formData.descripcion}
+                  onChange={handleInputChange}
+                  placeholder="Cuéntanos un poco sobre ti..."
+                  className="bg-gray-800 border-gray-600 text-white resize-none"
+                  rows={3}
+                  required
+                />
+              </div>
+              <Button
+                type="submit"
+                className="w-full bg-primary text-black hover:bg-primary-hover font-bold"
+              >
+                Enviar solicitud
+              </Button>
+            </form>
+          </DialogContent>
+        </Dialog>
         {/* Free milestone info */}
         <div className="mt-6 text-center">
           <p className="text-xs text-gray-500">
-            💎 Puede ser GRATIS al cumplir con tus hitos personalizados
+            💎 Puede ser GRATIS al cumplir con requerimientos
+          </p>
+          <p className="text-xs text-gray-500 mt-1">
+            📍 Disponible únicamente en Pereira
           </p>
         </div>
       </div>

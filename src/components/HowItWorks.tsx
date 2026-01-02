@@ -16,8 +16,16 @@ const HowItWorks = () => {
           <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-primary/30 transition-all">
             <div className="text-4xl mb-4">🎯</div>
             <h3 className="text-xl font-bold text-white mb-3">
-              1. Define tus hitos
+              1. Cumple estos requisitos
             </h3>
+            <ul className="text-gray-400 text-sm space-y-2 mb-3">
+              <li>✓ Asistir al 85% de las clases sugeridas</li>
+              <li>✓ Realizar 4 check-ins semanales al mes</li>
+              <li>✓ Registrar tu alimentación diaria</li>
+              <li>✓ Medición corporal inicial y final</li>
+              <li>✓ Fotos de antes y después</li>
+              <li>✓ Autorizar el uso de tu progreso para testimonios</li>
+            </ul>
             <p className="text-gray-400">
               Junto con tu coach, establecemos objetivos realistas y medibles específicos para ti 
               (peso, fuerza, hábitos, consistencia).
