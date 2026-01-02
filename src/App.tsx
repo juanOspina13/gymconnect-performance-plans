@@ -1,0 +1,171 @@
+import Hero from './components/Hero';
+import PlanCard from './components/PlanCard';
+import HowItWorks from './components/HowItWorks';
+import Comparison from './components/Comparison';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
+
+function App() {
+  const innerTransformationFeatures = [
+    {
+      category: 'Fitness',
+      title: '',
+      items: [
+        'Acceso a entrenamientos curados (gimnasio, estudios boutique, clases funcionales)',
+        'Rutinas sugeridas según objetivo (fuerza, tonificación, movilidad)',
+      ],
+    },
+    {
+      category: 'Nutrición',
+      title: '',
+      items: [
+        'Sesión inicial 1:1 con nutricionista',
+        'Plan nutricional flexible (no restrictivo)',
+        'Ajuste mensual según avances',
+      ],
+    },
+    {
+      category: 'Coaching',
+      title: '',
+      items: [
+        'Check-in semanal (virtual) con coach de hábitos',
+        'Seguimiento de adherencia (sueño, estrés, consistencia)',
+        'Feedback mensual de transformación',
+      ],
+    },
+    {
+      category: 'Experiencia',
+      title: '',
+      items: [
+        'Comunidad privada (WhatsApp / Slack)',
+        'Retos suaves mensuales (30 días de movimiento, hidratación, etc.)',
+        'Contenido guiado: respiración, journaling, mindfulness',
+      ],
+    },
+  ];
+
+  const mentalEdgeFeatures = [
+    {
+      category: 'Fitness Performance',
+      title: '',
+      items: [
+        'Entrenamientos orientados a rendimiento (fuerza, HIIT, movilidad avanzada)',
+        'Acceso prioritario a aliados top',
+        'Programación según objetivos personales',
+      ],
+    },
+    {
+      category: 'Nutrición de alto rendimiento',
+      title: '',
+      items: [
+        'Evaluación profunda (energía, enfoque, recuperación)',
+        'Estrategia nutricional para foco mental y rendimiento',
+        'Suplementación sugerida (sin vender humo)',
+      ],
+    },
+    {
+      category: 'Mental Coaching',
+      title: '',
+      items: [
+        'Sesiones 1:1 quincenales con coach mental',
+        'Trabajo en: Disciplina, Gestión del estrés, Enfoque y toma de decisiones',
+        'Protocolos de mañana y noche',
+      ],
+    },
+    {
+      category: 'Bio & Lifestyle Optimization',
+      title: '',
+      items: [
+        'Optimización de sueño',
+        'Técnicas de respiración y regulación emocional',
+        'Rutinas antiestrés para ejecutivos',
+      ],
+    },
+    {
+      category: 'Experiencia Ultra',
+      title: '',
+      items: [
+        'Grupo muy reducido',
+        'Eventos presenciales exclusivos (breathwork, ice bath, workshops)',
+        'Atención prioritaria tipo concierge',
+      ],
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-900">
+      <Hero />
+      
+      <section id="plans" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+              Elige Tu Camino
+            </h2>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              Dos planes diseñados para diferentes momentos de tu vida. 
+              Ambos con acompañamiento real y posibilidad de ser 100% gratis.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+            <PlanCard
+              emoji="🧘‍♀️"
+              title="INNER TRANSFORMATION"
+              subtitle="Cuerpo + hábitos + bienestar integral"
+              promise="Transforma tu cuerpo desde adentro hacia afuera, con acompañamiento humano real."
+              features={innerTransformationFeatures}
+              idealFor={[
+                'Ejecutivos, emprendedores, personas con agenda ocupada',
+                'Personas que ya entrenan pero no ven resultados sostenibles',
+                'Primer escalón hacia lo premium',
+              ]}
+            />
+
+            <PlanCard
+              emoji="🧠🔥"
+              title="MENTAL EDGE"
+              subtitle="Alto rendimiento físico + mental"
+              promise="Desarrolla un cuerpo fuerte y una mente imparable."
+              features={mentalEdgeFeatures}
+              idealFor={[
+                'Founders, C-level, atletas amateurs, high performers',
+                'Personas que pagan por ventaja, no por motivación',
+                'Usuarios que ya probaron algo tipo Inner Transformation',
+              ]}
+              isPremium
+            />
+          </div>
+        </div>
+      </section>
+
+      <HowItWorks />
+      <Comparison />
+      
+      <section id="faq">
+        <FAQ />
+      </section>
+
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            ¿Listo para empezar?
+          </h2>
+          <p className="text-xl text-gray-400 mb-8">
+            Agenda una llamada de 15 minutos y descubre cuál plan es perfecto para ti.
+          </p>
+          <button className="bg-primary hover:bg-primary-hover text-black font-bold py-4 px-12 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/20">
+            Agenda Tu Llamada Gratis
+          </button>
+          <p className="text-sm text-gray-500 mt-6">
+            Sin presión. Sin compromiso. Solo una conversación honesta.
+          </p>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
