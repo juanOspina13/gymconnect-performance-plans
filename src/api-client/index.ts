@@ -1,6 +1,6 @@
 // file: src/api-client/index.ts
 
-import { IApiClient } from './models';
+import type { IApiClient } from './models';
 import { apiMockClient } from './mock';
 import { apiLiveClient } from './live';
 

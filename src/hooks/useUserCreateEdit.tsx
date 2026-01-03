@@ -11,8 +11,15 @@ interface UseUserCreateEditProps {
   planTitle?: string;
 }
 
+interface CreateUserData extends RegisterUserSchema {
+  username: string;
+  plan?: string;
+  referido_por?: string;
+}
+
 export const useUserCreateEdit = ({ onSuccess, planTitle }: UseUserCreateEditProps = {}) => {
   const [loading, setLoading] = useState(false);
+  const [suscripcion, setSuscripcion] = useState<string>("");
 
   const {
     register,
@@ -25,31 +32,31 @@ export const useUserCreateEdit = ({ onSuccess, planTitle }: UseUserCreateEditPro
   });
 
   const createUser = useMutation({
-    mutationFn: (data: RegisterUserSchema) => createUserRequest(data),
+    mutationFn: (data: CreateUserData) => createUserRequest(data),
     onMutate: () => {
       setLoading(true);
     },
     onSuccess: () => {
       setLoading(false);
-      toast("Usuario registrado exitosamente");
+      toast("¡Recibimos tu solicitud exitosamente! Pronto te contactaremos.");
       reset();
-      onSuccess?.(); // Call the onSuccess callback if provided
+      onSuccess?.();
     },
     onError: () => {
       setLoading(false);
-      toast("Error al registrar el usuario");
+      toast("Error al registrar la solicitud. Por favor, intenta de nuevo.");
     },
   });
 
   const onSubmit: SubmitHandler<RegisterUserSchema> = async (data) => {
-    const submitData = {
+    const submitData: CreateUserData = {
       ...data,
       username: data.email,
-      telefono: data.telefono,
-      plan: planTitle, // Include the plan title in the submission
+      plan: suscripcion || planTitle,
     };
+    submitData.referido_por = "performance_plans -> " + planTitle;
     try {
-      createUser.mutate(submitData as RegisterUserSchema);
+      createUser.mutate(submitData);
     } catch (error) {
       console.error(error);
     }
@@ -68,5 +75,7 @@ export const useUserCreateEdit = ({ onSuccess, planTitle }: UseUserCreateEditPro
     loading,
     goBack,
     createUser,
+    suscripcion,
+    setSuscripcion,
   };
 };

@@ -1,8 +1,8 @@
-import { httpClient, HttpRequestType, IHttpRequestParams } from '../../../http-client';
-import { IPasswordPolicy } from './IPasswordPolicy';
-import { IPasswordPolicyResponse } from './IPasswordPolicyResponse';
-import { IUserApiClientModel } from './IUserApiClientModel';
-import { IUserApiClientModelUrls } from './IUserApiClientModelUrls';
+import { httpClient, HttpRequestType, type IHttpRequestParams } from '../../../http-client';
+import type { IPasswordPolicy } from './IPasswordPolicy';
+import type { IPasswordPolicyResponse } from './IPasswordPolicyResponse';
+import type { IUserApiClientModel } from './IUserApiClientModel';
+import type { IUserApiClientModelUrls } from './IUserApiClientModelUrls';
 
 /**
  * @Name UsersApiClientModel

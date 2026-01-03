@@ -75,9 +75,14 @@ const FAQ = () => {
 
         <div className="mt-12 text-center">
           <p className="text-gray-400 mb-6">¿Tienes otra pregunta?</p>
-          <button className="bg-primary hover:bg-primary-hover text-black font-bold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105">
-            Agenda una Llamada
-          </button>
+            <a 
+            href="https://wa.me/573169847703?text=hola!%20tengo%20una%20pregunta%20sobre%20los%20planes%20de%20GymConnect" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-primary hover:bg-primary-hover text-black font-bold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105"
+            >
+            Escríbenos por WhatsApp
+            </a>
         </div>
       </div>
     </section>

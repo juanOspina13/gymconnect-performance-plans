@@ -3,13 +3,7 @@
 // import a reference to the app config
 import { appConfig } from '../../../app-config';
 
-// instantiate the SecurityApiClient pointing at the url that returns static json mock data
-// const securityApiClient: ISecurityApiClient = new SecurityApiClientModel({
-//   urls: appConfig.security.apiUrls,
-//   mockDelay: 500 // simulate a delay so we can see our loader
-// })
-
-import {
+import type {
   ISecurityApiClient,
   IAuthenticateParameters,
   IAuthenticateResponse,
@@ -18,13 +12,7 @@ import {
   ICredentialParameters,
   ICredentialResponse
 } from '../../models/';
-import { httpClient, IHttpRequestParams, HttpRequestType } from '../../../http-client';
-// import {
-//   ISecurityApiClient,
-//   ISecurityApiClientUrls,
-//   IAuthenticateParameters,
-//   IAuthenticateResponse
-// } from './SecurityApiClient.interface'
+import { httpClient, type IHttpRequestParams, HttpRequestType } from '../../../http-client';
 
 const urls = appConfig.security.apiUrls;
 

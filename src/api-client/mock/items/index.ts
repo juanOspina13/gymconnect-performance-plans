@@ -3,7 +3,7 @@
 // import a reference to the app config
 import { appConfig } from '../../../app-config';
 
-import { IItemsApiClient, ItemsApiClientModel } from '../../models';
+import { type IItemsApiClient, ItemsApiClientModel } from '../../models';
 
 // instantiate the ItemsApiClient pointing at the url that returns static json mock data
 const itemsApiClient: IItemsApiClient = new ItemsApiClientModel({

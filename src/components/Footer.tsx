@@ -52,13 +52,13 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Contacto</h4>
             <ul className="space-y-2">
               <li className="text-gray-400 text-sm">
-                📧 hola@gymconnect.co
+                📧 gymconnect20@gmail.com
               </li>
               <li className="text-gray-400 text-sm">
-                📱 +57 300 123 4567
+                📱 +57 316 9847703
               </li>
               <li className="text-gray-400 text-sm">
-                📍 Medellín, Colombia
+                📍 Pereira, Colombia
               </li>
             </ul>
           </div>

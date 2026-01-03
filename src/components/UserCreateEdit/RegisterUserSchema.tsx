@@ -1,10 +1,6 @@
 import { z } from "zod";
 
-const cedulaValidator = (cedula: string) => {
-  // Example validation: cedula must be at least 6 characters long
-  return cedula.length >= 6;
-}
-
+ 
 export const registerUserSchema = z.object({
   nombre: z.string().min(2, "El nombre debe tener al menos 2 caracteres"),
   descripcion: z.string().min(2, "La descripción debe tener al menos 2 caracteres"),

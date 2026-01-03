@@ -1,4 +1,4 @@
-import type { IOrganizationsResponse } from '../../api-client/models/customers/IOrganizationsResponse';
+import { IOrganizationsResponse } from '../../api-client/models/customers/IOrganizationsResponse';
 
 export interface IOrganizationApiClientModel {
   getCustomers: (

@@ -1,5 +1,5 @@
-import type { IRole } from '../../api-client/models/roles/IRole';
-import type { IRolesResponse } from '../../api-client/models/roles/IRolesResponse';
+import { IRole } from '../../api-client/models/roles/IRole';
+import { IRolesResponse } from '../../api-client/models/roles/IRolesResponse';
 
 export interface IRoleApiClientModel {
   getRoles: (name: string, page: number, size: number, sort: string[]) => Promise<IRolesResponse>;

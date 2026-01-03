@@ -1,10 +1,10 @@
 // file: src/api-client/models/localization/LocalizationApiClient.model.ts
 
-import type { IRole } from '../../api-client/models/roles/IRole';
-import type { IRolesResponse } from '../../api-client/models/roles/IRolesResponse';
-import { httpClient, HttpRequestType, type IHttpRequestParams } from '../../http-client';
-import type { IRoleApiClientModel } from './IRoleApiClientModel';
-import type { IRoleApiClientModelUrls } from './IRoleApiClientModelUrls';
+import { IRole } from '../../api-client/models/roles/IRole';
+import { IRolesResponse } from '../../api-client/models/roles/IRolesResponse';
+import { httpClient, HttpRequestType, IHttpRequestParams } from '../../http-client';
+import { IRoleApiClientModel } from './IRoleApiClientModel';
+import { IRoleApiClientModelUrls } from './IRoleApiClientModelUrls';
 
 
 /**

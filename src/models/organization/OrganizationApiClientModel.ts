@@ -1,10 +1,10 @@
 // file: src/api-client/models/localization/LocalizationApiClient.model.ts
 
-import type { IOrganizationsResponse } from '../../api-client/models/customers/IOrganizationsResponse';
-import { httpClient, HttpRequestType, type IHttpRequestParams } from '../../http-client';
-import type { IOrganizationApiClientModel } from './IOrganizationApiClientModel';
-import type { IOrganizationApiClientModelUrls } from './IOrganizationApiClientModelUrls';
-import type { IOrganizationAdminInviteResponse } from './IOrganizationInviteResponse';
+import { IOrganizationsResponse } from '../../api-client/models/customers/IOrganizationsResponse';
+import { httpClient, HttpRequestType, IHttpRequestParams } from '../../http-client';
+import { IOrganizationApiClientModel } from './IOrganizationApiClientModel';
+import { IOrganizationApiClientModelUrls } from './IOrganizationApiClientModelUrls';
+import { IOrganizationAdminInviteResponse } from './IOrganizationInviteResponse';
 
 
 /**

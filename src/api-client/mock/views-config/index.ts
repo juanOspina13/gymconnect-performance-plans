@@ -3,7 +3,7 @@
 // import a reference to the app config
 import { appConfig } from '../../../app-config';
 
-import { IViewsConfigApiClient, ViewsConfigApiClientModel } from '../../models';
+import { type IViewsConfigApiClient, ViewsConfigApiClientModel } from '../../models';
 
 // instantiate the ViewsConfigApiClient pointing at the url that returns static json mock data
 const viewsConfigApiClient: IViewsConfigApiClient = new ViewsConfigApiClientModel({

@@ -1,4 +1,4 @@
-import { useState, type FC, type ChangeEvent, type FormEvent } from "react";
+import { useState, type FC } from "react";
 import { Button } from "./ui/button";
 import {
   Dialog,
@@ -7,9 +7,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "./ui/dialog";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
 import UserCreateEdit from "./UserCreateEdit/UserCreateEdit";
 
 interface Feature {
@@ -30,16 +27,6 @@ interface PlanCardProps {
   isPremium?: boolean;
 }
 
-interface FormData {
-  nombre: string;
-  celular: string;
-  email: string;
-  password: string;
-  trabajo: string;
-  objetivo: string;
-  descripcion: string;
-}
-
 const PlanCard: FC<PlanCardProps> = ({
   emoji,
   title,
@@ -52,7 +39,7 @@ const PlanCard: FC<PlanCardProps> = ({
   isPremium = false,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState<FormData>({
+  /* const [formData, setFormData] = useState<FormData>({
     nombre: "",
     celular: "",
     email: "",
@@ -61,7 +48,7 @@ const PlanCard: FC<PlanCardProps> = ({
     objetivo: "",
     descripcion: "",
   });
-
+  /*
   const handleInputChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -71,7 +58,8 @@ const PlanCard: FC<PlanCardProps> = ({
       [name]: value,
     }));
   };
-
+  */
+  /*
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission here
@@ -92,7 +80,7 @@ const PlanCard: FC<PlanCardProps> = ({
     });
     setIsModalOpen(false);
   };
-
+  */
   return (
     <div
       className={`relative rounded-3xl overflow-hidden transition-all duration-300 hover:scale-[1.02] ${
@@ -106,7 +94,7 @@ const PlanCard: FC<PlanCardProps> = ({
           ULTRA EXCLUSIVO
         </div>
       )}
-      
+
       {/* Location notice */}
       <div className="absolute top-0 left-0 bg-gray-700 text-white text-xs font-medium px-3 py-1 rounded-br-xl">
         📍 Solo Pereira
@@ -230,19 +218,21 @@ const PlanCard: FC<PlanCardProps> = ({
         <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
           <DialogContent className="bg-gray-900 border border-gray-700 text-white max-w-md">
             <DialogHeader>
-                  <DialogTitle className="text-2xl font-bold">
-                  Solicitar Suscripción
-                  </DialogTitle>
-                  <p className="text-sm text-yellow-400 mt-2">
-                  ⚠️ Tus datos serán evaluados y te contactaremos en un periodo máximo de 10 días. Si son aprobados, tu suscripción iniciará en ese mismo plazo.
-                  </p> 
+              <DialogTitle className="text-2xl font-bold">
+                Solicitar Suscripción
+              </DialogTitle>
+              <p className="text-sm text-yellow-400 mt-2">
+                ⚠️ Tus datos serán evaluados y te contactaremos en un periodo
+                máximo de 10 días. Si son aprobados, tu suscripción iniciará en
+                ese mismo plazo.
+              </p>
               <DialogDescription className="text-gray-400">
                 Completa el formulario para solicitar tu suscripción a {title}
               </DialogDescription>
             </DialogHeader>
             <UserCreateEdit
               onSuccess={() => {
-              setIsModalOpen(false);
+                setIsModalOpen(false);
               }}
               planTitle={title}
             />

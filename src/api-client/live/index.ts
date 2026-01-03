@@ -1,7 +1,7 @@
 // file: src/api-client/live/index.ts
 
 import {
-  IApiClient,
+  type IApiClient,
   GlobalApiClientModel,
   ItemsApiClientModel,
   SecurityApiClientModel,

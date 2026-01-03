@@ -1,6 +1,6 @@
 // file: src/api-client/mock/index.ts
 
-import { IApiClient } from '../models';
+import type { IApiClient } from '../models';
 
 import { globalApiClient } from './global';
 import { itemsApiClient } from './items';

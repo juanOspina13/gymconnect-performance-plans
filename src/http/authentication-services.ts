@@ -1,6 +1,6 @@
+import type { LoginUser, LogoutRequestBody } from "@/models/auth/loginUser";
 import BaseAPI from "./api";
-import { LoginUser, LogoutRequestBody } from "../app/models/auth/loginUser";
-import { getEnvironment } from "../environment";
+import { getEnvironment } from "@/environment";
 
 const globalHeaders = {
   "Content-Type": "application/json",

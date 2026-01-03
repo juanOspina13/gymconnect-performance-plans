@@ -109,7 +109,7 @@ function App() {
             </p>
           </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             <PlanCard
               emoji="🔥"
               title="DEFINITIVE TRANSFORMATION"
@@ -119,8 +119,8 @@ function App() {
               originalPrice={398000}
               features={innerTransformationFeatures}
               idealFor={[
-              "Ejecutivos, emprendedores, personas con agenda ocupada",
-              "Personas que ya entrenan pero no ven resultados sostenibles",
+                "Ejecutivos, emprendedores, personas con agenda ocupada",
+                "Personas que ya entrenan pero no ven resultados sostenibles",
               ]}
             />
             <PlanCard
@@ -132,13 +132,13 @@ function App() {
               originalPrice={797000}
               features={mentalEdgeFeatures}
               idealFor={[
-              'Founders, C-level, atletas amateurs, high performers',
-              'Personas que pagan por ventaja, no por motivación',
-              'Usuarios que ya probaron algo tipo Definitive Transformation',
+                "Founders, C-level, atletas amateurs, high performers",
+                "Personas que pagan por ventaja, no por motivación",
+                "Usuarios que ya probaron algo tipo Definitive Transformation",
               ]}
               isPremium
             />
-            </div>
+          </div>
         </div>
       </section>
 
@@ -155,11 +155,17 @@ function App() {
             ¿Listo para empezar?
           </h2>
           <p className="text-xl text-gray-400 mb-8">
-            Agenda una llamada de 15 minutos y descubre cuál plan es perfecto
-            para ti.
+            Escríbenos por WhatsApp y descubre cuál plan es perfecto para ti.
           </p>
           <button className="bg-primary hover:bg-primary-hover text-black font-bold py-4 px-12 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/20">
-            Agenda Tu Llamada Gratis
+            <a
+              href="https://wa.me/573001234567"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:text-primary-hover underline ml-1"
+            >
+              Contáctanos aquí
+            </a>
           </button>
           <p className="text-sm text-gray-500 mt-6">
             Sin presión. Sin compromiso. Solo una conversación honesta.
