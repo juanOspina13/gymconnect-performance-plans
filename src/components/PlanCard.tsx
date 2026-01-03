@@ -10,6 +10,7 @@ import {
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
+import UserCreateEdit from "./UserCreateEdit/UserCreateEdit";
 
 interface Feature {
   category: string;
@@ -239,115 +240,12 @@ const PlanCard: FC<PlanCardProps> = ({
                 Completa el formulario para solicitar tu suscripción a {title}
               </DialogDescription>
             </DialogHeader>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="nombre" className="text-white">
-                  Nombre
-                </Label>
-                <Input
-                  id="nombre"
-                  name="nombre"
-                  value={formData.nombre}
-                  onChange={handleInputChange}
-                  placeholder="Tu nombre completo"
-                  className="bg-gray-800 border-gray-600 text-white"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="celular" className="text-white">
-                  Celular
-                </Label>
-                <Input
-                  id="celular"
-                  name="celular"
-                  value={formData.celular}
-                  onChange={handleInputChange}
-                  placeholder="Tu número de celular"
-                  className="bg-gray-800 border-gray-600 text-white"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-white">
-                  Email
-                </Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  placeholder="tu@email.com"
-                  className="bg-gray-800 border-gray-600 text-white"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="password" className="text-white">
-                  Contraseña
-                </Label>
-                <Input
-                  id="password"
-                  name="password"
-                  type="password"
-                  value={formData.password}
-                  onChange={handleInputChange}
-                  placeholder="Tu contraseña"
-                  className="bg-gray-800 border-gray-600 text-white"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="trabajo" className="text-white">
-                  Trabajo y cargo
-                </Label>
-                <Input
-                  id="trabajo"
-                  name="trabajo"
-                  value={formData.trabajo}
-                  onChange={handleInputChange}
-                  placeholder="¿En qué trabajas? ¿qué cargo desempeñas?"
-                  className="bg-gray-800 border-gray-600 text-white"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="objetivo" className="text-white">
-                  Objetivo
-                </Label>
-                <Input
-                  id="objetivo"
-                  name="objetivo"
-                  value={formData.objetivo}
-                  onChange={handleInputChange}
-                  placeholder="¿Cuál es tu objetivo fitness?"
-                  className="bg-gray-800 border-gray-600 text-white"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="descripcion" className="text-white">
-                  Cuéntanos sobre tu estilo de vida y rutina diaria
-                </Label>
-                <Textarea
-                  id="descripcion"
-                  name="descripcion"
-                  value={formData.descripcion}
-                  onChange={handleInputChange}
-                  placeholder="Cuéntanos un poco sobre ti..."
-                  className="bg-gray-800 border-gray-600 text-white resize-none"
-                  rows={3}
-                  required
-                />
-              </div>
-              <Button
-                type="submit"
-                className="w-full bg-primary text-black hover:bg-primary-hover font-bold"
-              >
-                Enviar solicitud
-              </Button>
-            </form>
+            <UserCreateEdit
+              onSuccess={() => {
+              setIsModalOpen(false);
+              }}
+              planTitle={title}
+            />
           </DialogContent>
         </Dialog>
         {/* Free milestone info */}

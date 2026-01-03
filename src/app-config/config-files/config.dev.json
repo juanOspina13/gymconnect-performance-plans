@@ -1,0 +1,23 @@
+{
+  "global": {
+    "version": 1,
+    "prototyping": false,
+    "apiUrls": {
+      "fetchInfo": "/static/mock-data/global/info.json"
+    },
+    "production": false,
+    "api": "/api",
+    "apigeeEndpoint": "https://www.connect.cobrashields.com/app_dev.php/api",
+    "namespace": "",
+    "usersPath": "",
+    "inactivityAutoLogoutTime": 1800000,
+    "inactivityWarningTime": 1500000,
+    "basePath": "",
+    "viewsConfig": {
+      "apiUrls": {
+        "fetchViewsConfig": "/static/mock-data/views-config/views-brainstorming2.json"
+      }
+    },
+    "authpath": "https://www.connect.cobrashields.com/app_dev.php/api"
+  }
+}
