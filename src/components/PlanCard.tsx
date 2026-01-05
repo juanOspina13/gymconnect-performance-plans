@@ -21,6 +21,7 @@ interface PlanCardProps {
   subtitle: string;
   promise: string;
   price: number;
+  points: number;
   originalPrice?: number;
   features: Feature[];
   idealFor: string[];
@@ -36,6 +37,7 @@ const PlanCard: FC<PlanCardProps> = ({
   originalPrice,
   features,
   idealFor,
+  points,
   isPremium = false,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -176,7 +178,7 @@ const PlanCard: FC<PlanCardProps> = ({
             <div className="text-3xl">🏋️</div>
             <div>
               <p className="text-white font-bold text-lg">
-                165 Puntos Fit incluidos
+                {points} Puntos Fit incluidos
               </p>
               <p className="text-gray-400 text-sm">
                 Accede a gimnasios, estudios y espacios fitness/wellness que

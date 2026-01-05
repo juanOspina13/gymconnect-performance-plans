@@ -115,9 +115,10 @@ function App() {
               title="DEFINITIVE TRANSFORMATION"
               subtitle="Cuerpo + hábitos + bienestar integral"
               promise="Transforma tu cuerpo desde adentro hacia afuera, con acompañamiento real."
-              price={298000}
-              originalPrice={398000}
+              price={360000}
+              originalPrice={460000}
               features={innerTransformationFeatures}
+              points={120}
               idealFor={[
                 "Ejecutivos, emprendedores, personas con agenda ocupada",
                 "Personas que ya entrenan pero no ven resultados sostenibles",
@@ -130,6 +131,7 @@ function App() {
               promise="Desarrolla un cuerpo fuerte y una mente imparable."
               price={597000}
               originalPrice={797000}
+              points={165}
               features={mentalEdgeFeatures}
               idealFor={[
                 "Founders, C-level, atletas amateurs, high performers",
