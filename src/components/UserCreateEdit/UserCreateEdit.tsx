@@ -5,13 +5,13 @@ import { Textarea } from "../ui/textarea";
 import { Label } from "../ui/label";
 
 interface UserCreateEditProps {
-  onSuccess?: () => void;
+  onSuccess?: () => void; 
   planTitle?: string;
 }
 
-function UserCreateEdit({ onSuccess, planTitle }: UserCreateEditProps) {
+function UserCreateEdit({  planTitle }: UserCreateEditProps) {
   const { register, handleSubmit, errors, isValid, onSubmit, loading, goBack } =
-    useUserCreateEdit({ onSuccess, planTitle });
+    useUserCreateEdit({ planTitle });
 
   return (
     <form

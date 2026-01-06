@@ -172,7 +172,7 @@ const PlanCard: FC<PlanCardProps> = ({
           ))}
         </div>
 
-        {/* Fit Points Included */}
+        {/* Fit Points Included 
         <div className="mb-8 p-4 bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl border border-primary/20">
           <div className="flex items-center gap-3">
             <div className="text-3xl">🏋️</div>
@@ -187,7 +187,7 @@ const PlanCard: FC<PlanCardProps> = ({
             </div>
           </div>
         </div>
-
+*/}
         {/* Ideal For */}
         <div className="mb-8">
           <h4 className="text-lg font-bold text-white mb-4">Ideal para:</h4>
@@ -223,13 +223,17 @@ const PlanCard: FC<PlanCardProps> = ({
               <DialogTitle className="text-2xl font-bold">
                 Solicitar Suscripción
               </DialogTitle>
+              {/*}
               <p className="text-sm text-yellow-400 mt-2">
                 ⚠️ Tus datos serán evaluados y te contactaremos en un periodo
                 máximo de 10 días. Si son aprobados, tu suscripción iniciará en
                 ese mismo plazo.
-              </p>
+              </p>*/}
               <DialogDescription className="text-gray-400">
-                Completa el formulario para solicitar tu suscripción a {title}
+                El proceso consta de dos pasos: primero ingresa tus datos
+                personales y luego completa la solicitud de suscripción. Nuestro
+                equipo revisará tu información y te contactará para finalizar el
+                proceso.
               </DialogDescription>
             </DialogHeader>
             <UserCreateEdit

@@ -1,5 +1,9 @@
-import { registerUserSchema, type RegisterUserSchema } from "@/components/UserCreateEdit/RegisterUserSchema";
-import { createUserRequest } from "@/http/user-services";
+import {
+  registerUserSchema,
+  type RegisterUserSchema,
+} from "@/components/UserCreateEdit/RegisterUserSchema";
+import { postSuscripcionMercadoPago } from "@/http/transaccion-service";
+import { createUserRequest, ssoLogin } from "@/http/user-services";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
@@ -7,8 +11,8 @@ import { type SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "sonner";
 
 interface UseUserCreateEditProps {
-  onSuccess?: () => void;
   planTitle?: string;
+  dataUser?: any;
 }
 
 interface CreateUserData extends RegisterUserSchema {
@@ -17,7 +21,9 @@ interface CreateUserData extends RegisterUserSchema {
   referido_por?: string;
 }
 
-export const useUserCreateEdit = ({ onSuccess, planTitle }: UseUserCreateEditProps = {}) => {
+export const useUserCreateEdit = ({
+  planTitle,
+}: UseUserCreateEditProps = {}) => {
   const [loading, setLoading] = useState(false);
   const [suscripcion, setSuscripcion] = useState<string>("");
 
@@ -36,11 +42,44 @@ export const useUserCreateEdit = ({ onSuccess, planTitle }: UseUserCreateEditPro
     onMutate: () => {
       setLoading(true);
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
+      console.log("User created:", data);
+      ssoLogin(data.email).then(({ token }) => {
+        localStorage.setItem("user-token", token);
+      });
       setLoading(false);
-      toast("¡Recibimos tu solicitud exitosamente! Pronto te contactaremos.");
+      //toast("¡Recibimos tu solicitud exitosamente! Pronto te contactaremos.");
+      //reset();
+      // onSuccess?.();
+    },
+    onError: () => {
+      setLoading(false);
+      toast("Error al registrar la solicitud. Por favor, intenta de nuevo.");
+    },
+  });
+
+  // You need to import or implement the correct service for creating a subscription
+
+  const createSuscription = useMutation({
+    mutationFn: (data: {
+      mercadoPago: {
+        title: string;
+        quantity: number;
+        currency: "COP";
+        unit_price: number;
+        dataUser: any;
+      };
+    }) => postSuscripcionMercadoPago(data),
+    onMutate: () => {
+      setLoading(true);
+    },
+    onSuccess: (successData) => {
+      setLoading(false);
+      toast("Por favor realiza la suscripción");
+      console.log("Suscripción creada:", successData);
+      window.open(successData.init_point, "_blank");
       reset();
-      onSuccess?.();
+      // onSuccess?.();
     },
     onError: () => {
       setLoading(false);
@@ -52,11 +91,20 @@ export const useUserCreateEdit = ({ onSuccess, planTitle }: UseUserCreateEditPro
     const submitData: CreateUserData = {
       ...data,
       username: data.email,
-      plan: suscripcion || planTitle,
+      plan: suscripcion,
     };
-    submitData.referido_por = "performance_plans -> " + planTitle;
+    submitData.referido_por = "performance_plans -> " + suscripcion;
     try {
-      createUser.mutate(submitData);
+      createSuscription.mutate({
+        mercadoPago: {
+          title: `${planTitle}`,
+          quantity: 1,
+          currency: "COP",
+          unit_price: 200000, // You can set the price accordingly
+          dataUser: submitData,
+        },
+      });
+      //createUser.mutate(submitData);
     } catch (error) {
       console.error(error);
     }
@@ -74,8 +122,8 @@ export const useUserCreateEdit = ({ onSuccess, planTitle }: UseUserCreateEditPro
     onSubmit,
     loading,
     goBack,
-    createUser,
     suscripcion,
     setSuscripcion,
+    createSuscription,
   };
 };

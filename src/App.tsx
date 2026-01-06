@@ -11,15 +11,16 @@ function App() {
       category: "Fitness",
       title: "",
       items: [
-        "Acceso a entrenamientos (gimnasio, estudios boutique, clases funcionales)",
+        // "Acceso a entrenamientos (gimnasio, estudios boutique, clases funcionales)", // Eliminado
         "Rutinas sugeridas según objetivo (pérdida de grasa, aumento de masa muscular, movilidad)",
+        "Sesión inicial 1:1 con coach para armar y ajustar tu plan de entrenamiento",
       ],
     },
     {
       category: "Nutrición",
       title: "",
       items: [
-        "Sesión inicial 1:1 con nutricionista",
+        "Sesión inicial 1:1 con coach especializado en nutrición",
         "Plan nutricional flexible (no restrictivo)",
         "Ajuste mensual según avances",
       ],
@@ -28,8 +29,8 @@ function App() {
       category: "Coaching",
       title: "",
       items: [
-        "Check-in semanal (virtual) con coach de hábitos",
-        "Seguimiento de adherencia (sueño, estrés, consistencia)",
+        "Check-in semanal (virtual) con coach",
+        "Seguimiento de adherencia del entreno (consistencia, esfuerzo)",
         "Feedback mensual de transformación",
       ],
     },
@@ -50,7 +51,7 @@ function App() {
       category: "Fitness Performance",
       title: "",
       items: [
-        "Entrenamientos orientados a rendimiento (fuerza, HIIT, movilidad avanzada)",
+        // "Entrenamientos orientados a rendimiento (fuerza, HIIT, movilidad avanzada)", // Eliminado
         "Acceso prioritario a aliados top",
         "Programación según objetivos personales",
       ],
@@ -112,11 +113,11 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             <PlanCard
               emoji="🔥"
-              title="DEFINITIVE TRANSFORMATION"
+              title="FAST TRACK"
               subtitle="Cuerpo + hábitos + bienestar integral"
               promise="Transforma tu cuerpo desde adentro hacia afuera, con acompañamiento real."
-              price={360000}
-              originalPrice={460000}
+              price={200000}
+              originalPrice={300000}
               features={innerTransformationFeatures}
               points={120}
               idealFor={[
@@ -124,6 +125,7 @@ function App() {
                 "Personas que ya entrenan pero no ven resultados sostenibles",
               ]}
             />
+            {/*
             <PlanCard
               emoji="🧠🔥"
               title="MENTAL EDGE"
@@ -140,18 +142,21 @@ function App() {
               ]}
               isPremium
             />
+            */}
           </div>
         </div>
       </section>
 
       <HowItWorks />
+      {/*
       <Comparison />
+      */}
 
       <section id="faq">
         <FAQ />
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-800 to-gray-900">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             ¿Listo para empezar?

@@ -138,3 +138,11 @@ export const createUserRequest = async (user: any) => {
   );
   return response.data;
 };
+
+export const ssoLogin = async (email: string): Promise<{ token: string }> => {
+  const response = await API.post<{ token: string }>(
+    `${getEnvironment().baseUrl}${endpoint}/login_ssos`,
+    { username: email }
+  );
+  return response.data;
+};
