@@ -33,9 +33,11 @@ const Hero = () => {
           <p className="text-md text-primary font-medium mb-8 max-w-2xl mx-auto">
             Costo: <span className="font-bold">$400.000</span> COP
           </p>
+          {/* Location notice x
           <p className="text-md text-primary font-medium mb-8 max-w-2xl mx-auto">
             📍 Disponible solo en Pereira
           </p>
+          */}
           <div className="flex justify-center items-center">
             <Button
               asChild
