@@ -37,7 +37,6 @@ const PlanCard: FC<PlanCardProps> = ({
   originalPrice,
   features,
   idealFor,
-  points,
   isPremium = false,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -97,11 +96,11 @@ const PlanCard: FC<PlanCardProps> = ({
         </div>
       )}
 
-      {/* Location notice */}
+      {/* Location notice 
       <div className="absolute top-0 left-0 bg-gray-700 text-white text-xs font-medium px-3 py-1 rounded-br-xl">
         📍 Solo Pereira
       </div>
-
+*/}
       <div className="p-8 lg:p-10">
         {/* Header */}
         <div className="mb-6">
@@ -249,9 +248,11 @@ const PlanCard: FC<PlanCardProps> = ({
           <p className="text-xs text-gray-500">
             💎 Puede ser GRATIS al cumplir con requerimientos
           </p>
+          {/* Location notice 
           <p className="text-xs text-gray-500 mt-1">
             📍 Disponible únicamente en Pereira
           </p>
+          */}
         </div>
       </div>
     </div>

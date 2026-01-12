@@ -1,7 +1,6 @@
 import Hero from "./components/Hero";
 import PlanCard from "./components/PlanCard";
 import HowItWorks from "./components/HowItWorks";
-import Comparison from "./components/Comparison";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
@@ -12,28 +11,28 @@ function App() {
       title: "",
       items: [
         // "Acceso a entrenamientos (gimnasio, estudios boutique, clases funcionales)", // Eliminado
-        "Rutinas sugeridas según objetivo (pérdida de grasa, aumento de masa muscular, movilidad)",
-        "Sesión inicial 1:1 con coach para armar y ajustar tu plan de entrenamiento",
-      ],
-    },
-    {
-      category: "Nutrición",
-      title: "",
-      items: [
-        "Sesión inicial 1:1 con coach especializado en nutrición",
-        "Plan nutricional flexible (no restrictivo)",
-        "Ajuste mensual según avances",
-      ],
-    },
-    {
-      category: "Coaching",
-      title: "",
-      items: [
-        "Check-in semanal (virtual) con coach",
-        "Seguimiento de adherencia del entreno (consistencia, esfuerzo)",
-        "Feedback mensual de transformación",
-      ],
-    },
+        "Entrenamiento personalizado: rutinas adaptadas a tus objetivos (pérdida de grasa, ganancia muscular, movilidad) y a tus espacios (gimnasio, casa, estudios boutique, clases funcionales)",
+        "Sesión inicial virtual 1:1 con tu coach para diseñar y ajustar tu plan de entrenamiento",
+        "Acompañamiento semanal: revisión de avances y ajustes con tu coach",
+            ],
+          },
+          {
+            category: "Nutrición",
+            title: "",
+            items: [
+        "Sesión inicial virtual 1:1 con coach especializado en nutrición",
+        "Plan nutricional flexible, enfocado en hábitos sostenibles (sin restricciones extremas)",
+        "Ajuste mensual del plan según tus avances y necesidades",
+            ],
+          },
+          {
+            category: "Coaching",
+            title: "",
+            items: [
+        "Seguimiento personalizado de tu progreso y adherencia al entrenamiento",
+        "Feedback mensual sobre tu transformación y recomendaciones para potenciar resultados",
+            ],
+          },
     /*{
       category: "Experiencia",
       title: "",
@@ -45,7 +44,7 @@ function App() {
     },
     */
   ];
-
+  /*
   const mentalEdgeFeatures = [
     {
       category: "Fitness Performance",
@@ -93,7 +92,7 @@ function App() {
       ],
     },
   ];
-
+  */
   return (
     <div className="min-h-screen bg-gray-900">
       <Hero />
@@ -105,8 +104,12 @@ function App() {
               Elige Tu Camino
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Dos planes diseñados para diferentes momentos de tu vida. Ambos
-              con acompañamiento real y posibilidad de ser 100% gratis.
+              Transforma tu cuerpo y tus hábitos con un plan flexible,
+              acompañamiento real y resultados sostenibles, con la posibilidad
+              de ser{" "}
+              <span className="bg-primary text-black px-2 py-1 rounded font-extrabold text-lg inline-block shadow-md animate-pulse">
+                100% GRATIS
+              </span>
             </p>
           </div>
 
@@ -116,8 +119,8 @@ function App() {
               title="FAST TRACK"
               subtitle="Cuerpo + hábitos + bienestar integral"
               promise="Transforma tu cuerpo desde adentro hacia afuera, con acompañamiento real."
-              price={200000}
-              originalPrice={300000}
+              price={400000}
+              originalPrice={500000}
               features={innerTransformationFeatures}
               points={120}
               idealFor={[

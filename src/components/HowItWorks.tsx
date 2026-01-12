@@ -21,7 +21,6 @@ const HowItWorks = () => {
             <ul className="text-gray-400 text-sm space-y-2 mb-3">
               <li>✓ Asistir al 85% de las clases sugeridas</li>
               <li>✓ Realizar 4 check-ins semanales al mes</li>
-              <li>✓ Registrar tu alimentación diaria</li>
               <li>✓ Medición corporal inicial y final</li>
               <li>✓ Fotos de antes y después</li>
               <li>✓ Autorizar el uso de tu progreso para testimonios</li>

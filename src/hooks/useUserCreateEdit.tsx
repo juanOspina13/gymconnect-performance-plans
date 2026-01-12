@@ -3,7 +3,6 @@ import {
   type RegisterUserSchema,
 } from "@/components/UserCreateEdit/RegisterUserSchema";
 import { postSuscripcionMercadoPago } from "@/http/transaccion-service";
-import { createUserRequest, ssoLogin } from "@/http/user-services";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
@@ -35,27 +34,6 @@ export const useUserCreateEdit = ({
   } = useForm<RegisterUserSchema>({
     resolver: zodResolver(registerUserSchema),
     mode: "onChange",
-  });
-
-  const createUser = useMutation({
-    mutationFn: (data: CreateUserData) => createUserRequest(data),
-    onMutate: () => {
-      setLoading(true);
-    },
-    onSuccess: (data) => {
-      console.log("User created:", data);
-      ssoLogin(data.email).then(({ token }) => {
-        localStorage.setItem("user-token", token);
-      });
-      setLoading(false);
-      //toast("¡Recibimos tu solicitud exitosamente! Pronto te contactaremos.");
-      //reset();
-      // onSuccess?.();
-    },
-    onError: () => {
-      setLoading(false);
-      toast("Error al registrar la solicitud. Por favor, intenta de nuevo.");
-    },
   });
 
   // You need to import or implement the correct service for creating a subscription
