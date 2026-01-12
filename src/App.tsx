@@ -101,7 +101,7 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-              Elige Tu Camino
+            Impulsa tu transformación
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Transforma tu cuerpo y tus hábitos con un plan flexible,
@@ -111,6 +111,9 @@ function App() {
                 100% GRATIS
               </span>
             </p>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+             Alcanza tus metas en menos tiempo, con un plan claro y acompañamiento experto. Deja de improvisar y obtén resultados reales.
+          </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
