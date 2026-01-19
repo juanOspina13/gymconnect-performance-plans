@@ -31,7 +31,7 @@ const Hero = () => {
             Incluye diagnóstico inicial, check-in semanal, feedback personalizado y seguimiento de tu progreso.
           </p>
           <p className="text-md text-primary font-medium mb-8 max-w-2xl mx-auto">
-            Costo: <span className="font-bold">$400.000</span> COP
+            Costo: <span className="font-bold">$200.000</span> COP
           </p>
           {/* Location notice x
           <p className="text-md text-primary font-medium mb-8 max-w-2xl mx-auto">

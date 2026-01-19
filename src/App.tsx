@@ -122,8 +122,8 @@ function App() {
               title="FAST TRACK"
               subtitle="Cuerpo + hábitos + bienestar integral"
               promise="Transforma tu cuerpo desde adentro hacia afuera, con acompañamiento real."
-              price={400000}
-              originalPrice={500000}
+              price={200000}
+              originalPrice={400000}
               features={innerTransformationFeatures}
               points={120}
               idealFor={[
