@@ -13,12 +13,12 @@ const FAQ = () => {
     {
       question: '¿Qué resultados puedo esperar en 30 días?',
       answer:
-        'Dependiendo de tu punto de partida, puedes esperar pérdida de peso visible, mejora en energía y sueño, y hábitos sólidos de entrenamiento y nutrición. Tu coach te ayudará a establecer metas realistas para tu caso particular.',
+        'Dependiendo de tu punto de partida, puedes esperar pérdida de peso visible, mejora en energía y sueño, y hábitos sólidos de entrenamiento y nutrición. Tu accountability manager te ayudará a establecer metas realistas para tu caso particular.',
     },
     {
       question: '¿Los entrenamientos son presenciales o virtuales?',
       answer:
-        'El programa incluye rutinas que puedes hacer en gimnasio, casa o donde prefieras. El coaching y acompañamiento es virtual para tu comodidad, adaptándose a tu agenda y espacios disponibles.',
+        'El programa incluye rutinas que puedes hacer en gimnasio, casa o donde prefieras. El acompañamiento es virtual para tu comodidad, adaptándose a tu agenda y espacios disponibles.',
     },
     {
       question: '¿Hay contrato de permanencia?',

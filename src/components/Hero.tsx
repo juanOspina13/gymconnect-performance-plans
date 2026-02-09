@@ -16,15 +16,13 @@ const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="animate-fadeIn">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Pierde peso, mejora tu salud
+             Deja de empezar y abandonar
             <br />
-            <span className="bg-gradient-to-r from-primary text-white via-primary-300 to-primary bg-clip-text text-transparent">
-              y hábitos en 30 días
-            </span>
+          
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Un programa integral de 30 días con acompañamiento de coach profesional, rutinas efectivas y un sistema que te mantiene motivado hasta el final.
+            Conviértete en la persona que entrena incluso cuando no tiene ganas en 30 días. Este es un programa integral con acompañamiento, rutinas efectivas y un sistema que te mantiene motivado hasta el final.
           </p>
 
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
@@ -40,7 +38,7 @@ const Hero = () => {
                 <h3 className="text-lg font-bold text-white">Quema Calorías Express</h3>
               </div>
                 <p className="text-gray-400 text-sm mb-3">
-                  Elegimos juntos y seleccionamos las clases ideales para ti, enfocadas en quemar muchas calorías en poco tiempo. Cada semana puedes incorporar una sesión especial (se pagan adicional) que acelera tu pérdida de peso. Incluye:
+                  Elegimos juntos las clases ideales para ti, enfocadas en quemar muchas calorías en poco tiempo. Cada semana puedes incorporar una sesión especial que acelera tu pérdida de peso. Incluye:
                 </p>
                 <ul className="text-gray-400 text-sm mb-3 list-disc pl-5"> 
                 <li>Selección de ejercicios según preferencia</li>
@@ -84,9 +82,9 @@ const Hero = () => {
           <div className="bg-gradient-to-r from-primary/10 via-primary/20 to-primary/10 border border-primary/30 rounded-xl py-4 px-8 max-w-md mx-auto mb-8">
             <p className="text-gray-300 text-sm mb-1">Valor total de los paquetes: <span className="line-through">$340.000</span></p>
             <p className="text-white text-xl font-bold">
-              Tu precio: <span className="text-primary">$200.000</span> COP
+              Tu precio: <span className="text-primary">$150.000</span> COP
             </p>
-            <p className="text-primary text-sm font-medium mt-1">¡Ahorras más del 40%!</p>
+            <p className="text-primary text-sm font-medium mt-1">¡Ahorras más del 55%!</p>
           </div>
           {/* Location notice x
           <p className="text-md text-primary font-medium mb-8 max-w-2xl mx-auto">

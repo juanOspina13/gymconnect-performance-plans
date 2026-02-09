@@ -26,8 +26,8 @@ const HowItWorks = () => {
               <li>✓ Autorizar el uso de tu progreso para testimonios</li>
             </ul>
             <p className="text-gray-400">
-              Junto con tu coach, establecemos objetivos realistas y medibles específicos para ti 
-              (peso, fuerza, hábitos, consistencia).
+              Junto con tu accountability manager, establecemos objetivos realistas y medibles específicos para ti 
+              (asistencias).
             </p>
           </div>
 

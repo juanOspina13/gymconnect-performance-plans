@@ -78,7 +78,7 @@ export const useUserCreateEdit = ({
           title: `${planTitle}`,
           quantity: 1,
           currency: "COP",
-          unit_price: 200000, // You can set the price accordingly
+          unit_price: 150000, // You can set the price accordingly
           dataUser: submitData,
         },
       });

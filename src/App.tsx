@@ -103,10 +103,10 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-              Tu programa de 30 días
+              Conviertete en la persona que entrena sin pensarlo 30 días
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Pierde peso, mejora tu salud y construye hábitos que se mantienen. Rutinas efectivas, acompañamiento real y un sistema que no te deja abandonar.
+              Conviertete en la persona que entrena sin pensarlo 30 días. Rutinas efectivas, acompañamiento real y un sistema que no te deja abandonar.
             </p>
           </div>
 
@@ -114,9 +114,9 @@ function App() {
             <PlanCard
               emoji="🔥"
               title="PROGRAMA 30 DÍAS"
-              subtitle="Pierde peso · Mejora tu salud · Crea hábitos"
+              subtitle=" Conviertete en la persona que entrena sin pensarlo 30 días"
               promise="En 30 días transforma tu cuerpo, tu salud y tus hábitos con acompañamiento real."
-              price={200000}
+              price={150000}
               originalPrice={340000}
               features={innerTransformationFeatures}
               points={120}
