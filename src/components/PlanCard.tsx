@@ -243,10 +243,10 @@ const PlanCard: FC<PlanCardProps> = ({
             />
           </DialogContent>
         </Dialog>
-        {/* Free milestone info */}
+        {/* Refund info */}
         <div className="mt-6 text-center">
           <p className="text-xs text-gray-500">
-            💎 Puede ser GRATIS al cumplir con requerimientos
+            💎 100% reembolsable: cumple tus hitos y te devolvemos tu inversión en 5 cuotas mensuales
           </p>
           {/* Location notice 
           <p className="text-xs text-gray-500 mt-1">

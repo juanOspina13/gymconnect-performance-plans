@@ -4,10 +4,10 @@ const Comparison = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            ¿Cuál es para ti?
+            ¿Qué incluye el programa de 30 días?
           </h2>
           <p className="text-xl text-gray-400">
-            Una comparación directa para ayudarte a decidir
+            Todo lo que necesitas para perder peso, mejorar tu salud y construir hábitos duraderos
           </p>
         </div>
 
@@ -15,43 +15,31 @@ const Comparison = () => {
             <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-700 w-full min-h-[60vh]">
             {/* Definitive Transformation */}
             <div className="p-8 lg:p-10 h-full">
-              <div className="text-4xl mb-4">🧘‍♀️</div>
+              <div className="text-4xl mb-4">🎁</div>
                 <h3 className="text-2xl font-bold text-white mb-2">
-                FAST TRACK
+                PROGRAMA 30 DÍAS
                 </h3>
                 <p className="text-primary text-lg font-semibold mb-6">
-                Llega más rápido a tu objetivo
+                Pierde peso, mejora tu salud y hábitos con todo incluido
                 </p>
-                <p className="text-primary text-lg font-semibold mb-6">
-                Acorta tu camino
-                </p>
-              <p className="text-primary text-lg font-semibold mb-6">
-              Tu puerta de entrada
-              </p>
 
               <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">✓</span>
+                <span className="text-primary mt-1">🔥</span>
                 <span className="text-gray-300">
-                Estructura flexible sin presión extrema
+                <strong className="text-white">Quema Calorías Express:</strong> Rutinas probadas para maximizar la quema calórica en cada sesión
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">✓</span>
+                <span className="text-primary mt-1">💪</span>
                 <span className="text-gray-300">
-                Coaching de hábitos + nutrición básica
+                <strong className="text-white">Sistema Antiabandono:</strong> Check-ins semanales, llamadas de inicio y cierre, recompensas por cumplimiento. ¡No lo haces solo!
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">✓</span>
+                <span className="text-primary mt-1">⚡</span>
                 <span className="text-gray-300">
-                Comunidad activa y retos suaves
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">✓</span>
-                <span className="text-gray-300">
-                Ideal para iniciar o retomar
+                <strong className="text-white">Flexibilidad Total:</strong> Ajusta tus entrenos según tu fatiga o energía, al mismo costo por sesión
                 </span>
               </li>
               </ul>
@@ -119,7 +107,7 @@ const Comparison = () => {
 
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-400 italic">
-            "No todos necesitan Mental Edge. Pero quienes lo hacen, lo saben."
+            "En 30 días puedes cambiar tu cuerpo, tu salud y tus hábitos. Solo necesitas dar el primer paso."
           </p>
         </div>
       </div>

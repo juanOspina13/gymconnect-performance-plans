@@ -3,22 +3,22 @@ const FAQ = () => {
     {
       question: '¿Realmente puedo recuperar el 100% de mi inversión?',
       answer:
-        'Sí. Al inscribirte, definimos juntos hitos específicos y medibles adaptados a tu situación. Si los cumples en el tiempo acordado, recibes el reembolso completo. Es nuestra forma de apostar por tu compromiso.',
+        'Sí. Al inscribirte, definimos juntos hitos específicos y medibles adaptados a tu situación. Si los cumples en los 30 días, te reembolsamos el 100% dividido en 5 descuentos mensuales del 20% sobre tu siguiente ciclo. Es nuestra forma de apostar por tu compromiso.',
     },
     {
       question: '¿Qué pasa si no cumplo los hitos?',
       answer:
-        'No hay penalización. Sigues recibiendo todo el valor del programa: coaching, entrenamientos, nutrición y acompañamiento. Los hitos son un incentivo adicional, no una obligación estresante.',
+        'No hay penalización. Sigues disfrutando de todo el programa: rutinas, sistema antiabandono, flexibilidad y acompañamiento. Los hitos son un incentivo para premiarte por tu constancia, no una obligación.',
     },
     {
-      question: '¿Puedo cambiar de Definitive Transformation a Mental Edge?',
+      question: '¿Qué resultados puedo esperar en 30 días?',
       answer:
-        'Absolutamente. De hecho, es la progresión natural. Muchos usuarios comienzan con Definitive Transformation para construir bases sólidas, y luego evolucionan a Mental Edge cuando están listos para más.',
+        'Dependiendo de tu punto de partida, puedes esperar pérdida de peso visible, mejora en energía y sueño, y hábitos sólidos de entrenamiento y nutrición. Tu coach te ayudará a establecer metas realistas para tu caso particular.',
     },
     {
       question: '¿Los entrenamientos son presenciales o virtuales?',
       answer:
-        'Ambos planes incluyen acceso a gimnasios y estudios boutique aliados, pero también rutinas que puedes hacer donde quieras. El coaching es principalmente virtual para tu comodidad, con eventos presenciales exclusivos en Mental Edge.',
+        'El programa incluye rutinas que puedes hacer en gimnasio, casa o donde prefieras. El coaching y acompañamiento es virtual para tu comodidad, adaptándose a tu agenda y espacios disponibles.',
     },
     {
       question: '¿Hay contrato de permanencia?',
@@ -26,9 +26,9 @@ const FAQ = () => {
         'No. Puedes pausar o cancelar cuando quieras. Confiamos en que el valor que entregas habla por sí mismo. Queremos que te quedes porque quieres, no porque estás atrapado.',
     },
     {
-      question: '¿Cómo sé cuál plan elegir?',
+      question: '¿Para quién es este programa de 30 días?',
       answer:
-        'Si estás iniciando, retomando, o buscas equilibrio sin presión extrema: Definitive Transformation. Si ya tienes bases, buscas ventaja competitiva y estás dispuesto a ir más profundo: Mental Edge. ¿Aún dudas? Agenda una llamada y te ayudamos a decidir.',
+        'Para cualquier persona que quiera perder peso, mejorar su salud y construir hábitos sostenibles. Ya sea que estés iniciando, retomando o buscando un sistema que no te deje abandonar. ¿Aún dudas? Escríbenos y te ayudamos a decidir.',
     },
   ];
 
@@ -76,7 +76,7 @@ const FAQ = () => {
         <div className="mt-12 text-center">
           <p className="text-gray-400 mb-6">¿Tienes otra pregunta?</p>
             <a 
-            href="https://wa.me/573169847703?text=hola!%20me%20gustaría%20saber%20más%20de%20la%20suscripción%20fast%20track" 
+            href="https://wa.me/573169847703?text=hola!%20me%20gustaría%20saber%20más%20del%20programa%20de%2030%20días" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-primary hover:bg-primary-hover text-black font-bold py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105"

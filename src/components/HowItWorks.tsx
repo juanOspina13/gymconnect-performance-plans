@@ -4,11 +4,11 @@ const HowItWorks = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            ¿Cómo funciona lo de{' '}
-            <span className="text-primary">GRATIS</span>?
+            Cumple tus hitos y{' '}
+            <span className="text-primary">te devolvemos todo</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Ambos planes pueden ser 100% gratis si cumples con tus hitos personalizados
+            Si cumples con los objetivos que definimos juntos, te reembolsamos el 100% de tu inversión. Así de simple.
           </p>
         </div>
 
@@ -48,8 +48,7 @@ const HowItWorks = () => {
               3. Recibe tu reembolso
             </h3>
             <p className="text-gray-400">
-              Al cumplir tus hitos, recuperas el 100% de lo invertido. 
-              Tu compromiso se convierte en tu recompensa.
+              Al cumplir tus hitos, te devolvemos el 100% de tu inversión dividido en 5 descuentos mensuales del 20% cada uno sobre tu siguiente ciclo. Tu esfuerzo se convierte en tu recompensa.
             </p>
           </div>
         </div>
