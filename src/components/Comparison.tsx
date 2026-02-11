@@ -17,7 +17,7 @@ const Comparison = () => {
             <div className="p-8 lg:p-10 h-full">
               <div className="text-4xl mb-4">🎁</div>
                 <h3 className="text-2xl font-bold text-white mb-2">
-                PROGRAMA 30 DÍAS
+                Programa deja de empezar y abandonar
                 </h3>
                 <p className="text-primary text-lg font-semibold mb-6">
                 Pierde peso, mejora tu salud y hábitos con todo incluido
@@ -27,19 +27,19 @@ const Comparison = () => {
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">🔥</span>
                 <span className="text-gray-300">
-                <strong className="text-white">Quema Calorías Express:</strong> Rutinas probadas para maximizar la quema calórica en cada sesión
+                <strong className="text-white">Quema Calorías Express (GRATIS):</strong> Rutinas probadas para maximizar la quema calórica en cada sesión
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">💪</span>
                 <span className="text-gray-300">
-                <strong className="text-white">Sistema Antiabandono:</strong> Check-ins semanales, llamadas de inicio y cierre, recompensas por cumplimiento. ¡No lo haces solo!
+                <strong className="text-white">Sistema Antiabandono ($130.000):</strong> Check-ins semanales, llamadas de inicio y cierre, recompensas por cumplimiento. ¡No lo haces solo!
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">⚡</span>
                 <span className="text-gray-300">
-                <strong className="text-white">Flexibilidad Total:</strong> Ajusta tus entrenos según tu fatiga o energía, al mismo costo por sesión
+                <strong className="text-white">Flexibilidad Total ($50.000):</strong> Ajusta tus entrenos según tu fatiga o energía, al mismo costo por sesión
                 </span>
               </li>
               </ul>

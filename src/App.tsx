@@ -8,7 +8,7 @@ function App() {
   const innerTransformationFeatures = [
     {
       category: "🔥 Quema Calorías Express",
-      title: "Valor: $80.000 COP",
+      title: "",
       items: [
         "Elegimos juntos las clases ideales para ti, enfocadas en quemar muchas calorías en poco tiempo",
         "Cada semana puedes incorporar una sesión especial que acelera tu pérdida de peso (se pagan adicional)",
@@ -110,19 +110,19 @@ function App() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             <PlanCard
               emoji="🔥"
-              title="PROGRAMA 30 DÍAS"
-              subtitle=" Conviertete en la persona que entrena sin pensarlo 30 días"
-              promise="En 30 días transforma tu cuerpo, tu salud y tus hábitos con acompañamiento real."
+              title="Programa deja de empezar y abandonar"
+              subtitle="Conviertete en la persona que entrena sin pensarlo 30 días"
+              promise="30 días, resultados reales: transforma tu cuerpo, tu salud, tus hábitos y tu relación con el ejercicio. Con rutinas efectivas, recompensas y acompañamiento que no te deja abandonar."
               price={150000}
               originalPrice={340000}
               features={innerTransformationFeatures}
               points={120}
               idealFor={[
-                "Ejecutivos, emprendedores, personas con agenda ocupada",
-                "Personas que ya entrenan pero no ven resultados sostenibles",
+              "Ejecutivos, emprendedores, personas con agenda ocupada",
+              "Personas que ya entrenan pero no ven resultados sostenibles",
               ]}
             />
             {/*
@@ -136,14 +136,14 @@ function App() {
               points={165}
               features={mentalEdgeFeatures}
               idealFor={[
-                "Founders, C-level, atletas amateurs, high performers",
-                "Personas que pagan por ventaja, no por motivación",
-                "Usuarios que ya probaron algo tipo Definitive Transformation",
+              "Founders, C-level, atletas amateurs, high performers",
+              "Personas que pagan por ventaja, no por motivación",
+              "Usuarios que ya probaron algo tipo Definitive Transformation",
               ]}
               isPremium
             />
             */}
-          </div>
+            </div>
         </div>
       </section>
 

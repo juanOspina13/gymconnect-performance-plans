@@ -44,7 +44,6 @@ const Hero = () => {
                 <li>Selección de ejercicios según preferencia</li>
                 <li>Las sesiones en el espacio son adicionales</li>
               </ul>
-              <p className="text-primary text-xs font-medium">Valor: $80.000 COP</p>
             </div>
 
             {/* Package 2 - Sistema Antiabandono */}
@@ -62,29 +61,29 @@ const Hero = () => {
                 <li>Recompensas por cumplimiento</li>
                 <li>¡No lo haces solo!</li>
                 </ul>
-              <p className="text-primary text-xs font-medium">Valor: $180.000 COP</p>
+              <p className="text-primary text-xs font-medium">Valor: $130.000 COP</p>
             </div>
 
             {/* Package 3 - Flexibilidad */}
             <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-left hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-2xl">⚡</span>
-                <h3 className="text-lg font-bold text-white">Nos adaptamos a tu vida</h3>
+                <h3 className="text-lg font-bold text-white">Rutinas más flexibles</h3>
               </div>
                 <p className="text-gray-400 text-sm mb-3">
                 Sabemos que tu día a día puede cambiar. Por eso, el sistema se adapta a tus horarios, niveles de energía y lugares de entrenamiento, para que puedas seguir avanzando sin importar las circunstancias.
                 </p>
-              <p className="text-primary text-xs font-medium">Valor: $80.000 COP</p>
+              <p className="text-primary text-xs font-medium">Valor: $50.000 COP</p>
             </div>
           </div>
 
           {/* Total value highlight */}
           <div className="bg-gradient-to-r from-primary/10 via-primary/20 to-primary/10 border border-primary/30 rounded-xl py-4 px-8 max-w-md mx-auto mb-8">
-            <p className="text-gray-300 text-sm mb-1">Valor total de los paquetes: <span className="line-through">$340.000</span></p>
+            <p className="text-gray-300 text-sm mb-1">Valor total de los paquetes: <span className="line-through">$180.000</span></p>
             <p className="text-white text-xl font-bold">
-              Tu precio: <span className="text-primary">$150.000</span> COP
+              Tu precio: <span className="text-primary">$66.000</span> COP
             </p>
-            <p className="text-primary text-sm font-medium mt-1">¡Ahorras más del 55%!</p>
+            <p className="text-primary text-sm font-medium mt-1">¡Ahorras más del 63%!</p>
           </div>
           {/* Location notice x
           <p className="text-md text-primary font-medium mb-8 max-w-2xl mx-auto">
