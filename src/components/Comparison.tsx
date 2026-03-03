@@ -25,21 +25,21 @@ const Comparison = () => {
 
               <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">🔥</span>
+                <span className="text-primary mt-1">�</span>
                 <span className="text-gray-300">
-                <strong className="text-white">Quema Calorías Express (GRATIS):</strong> Rutinas probadas para maximizar la quema calórica en cada sesión
+                <strong className="text-white">Premios y recompensas por tu disciplina:</strong> Check-ins semanales, llamadas de inicio y cierre, recompensas por cumplimiento. ¡No lo haces solo!
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">💪</span>
+                <span className="text-primary mt-1">🗓️</span>
                 <span className="text-gray-300">
-                <strong className="text-white">Sistema Antiabandono ($130.000):</strong> Check-ins semanales, llamadas de inicio y cierre, recompensas por cumplimiento. ¡No lo haces solo!
+                <strong className="text-white">Coach humano + clon AI 24/7:</strong> Sesión semanal con tu coach y soporte 24/7 con IA entrenada con su metodología
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">⚡</span>
+                <span className="text-primary mt-1">🌟</span>
                 <span className="text-gray-300">
-                <strong className="text-white">Flexibilidad Total ($50.000):</strong> Ajusta tus entrenos según tu fatiga o energía, al mismo costo por sesión
+                <strong className="text-white">Beneficios de la comunidad:</strong> Retos mensuales, contenido exclusivo y apoyo entre compañeros
                 </span>
               </li>
               </ul>

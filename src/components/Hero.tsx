@@ -26,31 +26,33 @@ const Hero = () => {
           </p>
 
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-            Incluye rutinas de alta quema calórica, sistema antiabandono para que no desistas, y flexibilidad total para adaptar los entrenos a tu estilo de vida.
+            Incluye premios y recompensas por tu disciplina, coach humano + clon AI 24/7 y una comunidad que te impulsa.
           </p>
 
           {/* Included packages */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
-            {/* Package 1 - Ejercicios */}
+            {/* Package 1 - Coach humano + AI */}
             <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-left hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-2xl">🔥</span>
-                <h3 className="text-lg font-bold text-white">Quema Calorías Express</h3>
+                <span className="text-2xl">🗓️</span>
+                <h3 className="text-lg font-bold text-white">Coach humano + clon AI 24/7</h3>
               </div>
                 <p className="text-gray-400 text-sm mb-3">
-                  Elegimos juntos las clases ideales para ti, enfocadas en quemar muchas calorías en poco tiempo. Cada semana puedes incorporar una sesión especial que acelera tu pérdida de peso. Incluye:
+                  Acompañamiento semanal con tu coach y soporte 24/7 con IA entrenada con su metodología. Incluye:
                 </p>
-                <ul className="text-gray-400 text-sm mb-3 list-disc pl-5"> 
-                <li>Selección de ejercicios según preferencia</li>
-                <li>Las sesiones en el espacio son adicionales</li>
+                <ul className="text-gray-400 text-sm mb-3 list-disc pl-5">
+                <li>Sesión semanal personalizada con tu coach humano</li>
+                <li>Revisión de progreso y ajuste de plan</li>
+                <li>Clon AI disponible 24/7 para dudas inmediatas</li>
+                <li>Motivación y seguimiento continuo sin esperas</li>
               </ul>
             </div>
 
-            {/* Package 2 - Sistema Antiabandono */}
+            {/* Package 2 - Premios y recompensas */}
             <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-left hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-2xl">💪</span>
-                <h3 className="text-lg font-bold text-white">Sistema Antiabandono</h3>
+                <h3 className="text-lg font-bold text-white">Premios y recompensas por tu disciplina</h3>
               </div>
                 <p className="text-gray-400 text-sm mb-3">
                 El sistema que hará que no abandones y ames entrenar. Incluye:
@@ -64,16 +66,21 @@ const Hero = () => {
               <p className="text-primary text-xs font-medium">Valor: $130.000 COP</p>
             </div>
 
-            {/* Package 3 - Flexibilidad */}
+            {/* Package 3 - Comunidad */}
             <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-left hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-2xl">⚡</span>
-                <h3 className="text-lg font-bold text-white">Rutinas más flexibles</h3>
+                <span className="text-2xl">🌟</span>
+                <h3 className="text-lg font-bold text-white">Beneficios de la comunidad</h3>
               </div>
                 <p className="text-gray-400 text-sm mb-3">
-                Sabemos que tu día a día puede cambiar. Por eso, el sistema se adapta a tus horarios, niveles de energía y lugares de entrenamiento, para que puedas seguir avanzando sin importar las circunstancias.
+                No entrenas solo. Obtén beneficios exclusivos por estar en la comunidad. Incluye:
                 </p>
-              <p className="text-primary text-xs font-medium">Valor: $50.000 COP</p>
+                <ul className="text-gray-400 text-sm mb-3 list-disc pl-5">
+                <li>Comunidad privada con otros participantes</li>
+                <li>Retos mensuales para mantenerte motivado</li>
+                <li>Contenido exclusivo de entrenamiento y bienestar</li>
+                <li>Apoyo y motivación entre compañeros</li>
+              </ul>
             </div>
           </div>
 

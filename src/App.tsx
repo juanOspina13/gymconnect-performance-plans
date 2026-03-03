@@ -7,44 +7,38 @@ import Footer from "./components/Footer";
 function App() {
   const innerTransformationFeatures = [
     {
-      category: "🔥 Quema Calorías Express",
-      title: "",
-      items: [
-        "Elegimos juntos las clases ideales para ti, enfocadas en quemar muchas calorías en poco tiempo",
-        "Cada semana puedes incorporar una sesión especial que acelera tu pérdida de peso (se pagan adicional)",
-        "Selección de ejercicios según tu preferencia",
-        "Las sesiones en el espacio son adicionales",
-      ],
-    },
-    {
-      category: "💪 Sistema Antiabandono",
+      category: "🏆 Premios y recompensas por tu disciplina",
       title: "Valor: $180.000 COP",
       items: [
         "El sistema que hará que no abandones y ames entrenar",
         "Check-ins semanales los viernes",
         "Llamada de inicio y cierre con feedback de tu transformación",
-        "Recompensas por cumplimiento",
+        "Premios y recompensas por cumplimiento",
         "¡No lo haces solo!",
       ],
     },
     {
-      category: "⚡ Nos adaptamos a tu vida",
-      title: "Valor: $80.000 COP",
-      items: [
-        "Tu día a día puede cambiar, y el sistema se adapta a tus horarios, niveles de energía y lugares de entrenamiento",
-        "Sigue avanzando sin importar las circunstancias",
-      ],
-    },
-    /*{
-      category: "Experiencia",
+      category: "🗓️ Acompañamiento con coach humano + clon AI 24/7",
       title: "",
       items: [
-        "Comunidad privada (WhatsApp / Slack)",
-        "Retos suaves mensuales (30 días de movimiento, hidratación, etc.)",
-        "Contenido guiado: respiración, journaling, mindfulness",
+        "Sesión semanal personalizada con tu coach humano",
+        "Revisión de progreso y ajuste de plan",
+        "Resolución de dudas y feedback directo",
+        "Tu clon AI del coach disponible 24/7 para respuestas inmediatas",
+        "Motivación y seguimiento continuo sin esperas",
+        "IA entrenada con la metodología de tu coach",
       ],
     },
-    */
+    {
+      category: "🌟 Beneficios de la comunidad",
+      title: "",
+      items: [
+        "Comunidad privada con otros participantes del programa",
+        "Retos mensuales para mantenerte motivado",
+        "Contenido exclusivo: tips de entrenamiento, nutrición y bienestar",
+        "Apoyo y motivación entre compañeros",
+      ],
+    },
   ];
   /*
   const mentalEdgeFeatures = [
@@ -116,8 +110,8 @@ function App() {
               title="Programa deja de empezar y abandonar"
               subtitle="Conviertete en la persona que entrena sin pensarlo 30 días"
               promise="30 días, resultados reales: transforma tu cuerpo, tu salud, tus hábitos y tu relación con el ejercicio. Con rutinas efectivas, recompensas y acompañamiento que no te deja abandonar."
-              price={150000}
-              originalPrice={340000}
+              price={66000}
+              originalPrice={180000}
               features={innerTransformationFeatures}
               points={120}
               idealFor={[

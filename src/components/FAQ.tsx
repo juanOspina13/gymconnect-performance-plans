@@ -8,7 +8,7 @@ const FAQ = () => {
     {
       question: '¿Qué pasa si no cumplo los hitos?',
       answer:
-        'No hay penalización. Sigues disfrutando de todo el programa: Quema Calorías Express (GRATIS), Sistema Antiabandono ($130.000), Flexibilidad ($50.000) y acompañamiento. Los hitos son un incentivo para premiarte por tu constancia, no una obligación.',
+        'No hay penalización. Sigues disfrutando de todo el programa: premios y recompensas por tu disciplina, coach humano + clon AI 24/7 y comunidad. Los hitos son un incentivo para premiarte por tu constancia, no una obligación.',
     },
     {
       question: '¿Qué resultados puedo esperar en 30 días?',
