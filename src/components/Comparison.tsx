@@ -25,21 +25,21 @@ const Comparison = () => {
 
               <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">�</span>
+                <span className="text-primary mt-1">🕒</span>
                 <span className="text-gray-300">
-                <strong className="text-white">Premios y recompensas por tu disciplina:</strong> Check-ins semanales, llamadas de inicio y cierre, recompensas por cumplimiento. ¡No lo haces solo!
+                <strong className="text-white">Acompañamiento 24/7:</strong> Soporte continuo con coach humano e IA para evitar que un día de baja motivación rompa tu hábito.
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">🗓️</span>
+                <span className="text-primary mt-1">🏆</span>
                 <span className="text-gray-300">
-                <strong className="text-white">Coach humano + clon AI 24/7:</strong> Sesión semanal con tu coach y soporte 24/7 con IA entrenada con su metodología
+                <strong className="text-white">Premios y beneficios por disciplina:</strong> Check-ins, metas claras y recompensas pensadas para convertir constancia en hábito.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">🌟</span>
                 <span className="text-gray-300">
-                <strong className="text-white">Beneficios de la comunidad:</strong> Retos mensuales, contenido exclusivo y apoyo entre compañeros
+                <strong className="text-white">Comunidad que impulsa tu progreso:</strong> Retos, apoyo entre pares y celebraciones compartidas que te mantienen comprometido.
                 </span>
               </li>
               </ul>
@@ -107,7 +107,7 @@ const Comparison = () => {
 
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-400 italic">
-            "En 30 días puedes cambiar tu cuerpo, tu salud y tus hábitos. Solo necesitas dar el primer paso."
+            "En 90 días puedes cambiar tu cuerpo, tu salud y tus hábitos. Solo necesitas dar el primer paso."
           </p>
         </div>
       </div>

@@ -8,7 +8,7 @@ const FAQ = () => {
     {
       question: '¿Qué pasa si no cumplo los hitos?',
       answer:
-        'No hay penalización. Sigues disfrutando de todo el programa: premios y recompensas por tu disciplina, coach humano + clon AI 24/7 y comunidad. Los hitos son un incentivo para premiarte por tu constancia, no una obligación.',
+        'No hay penalización. Sigues con todo el programa: Acompañamiento 24/7 (coach semanal + IA para dudas inmediatas), Premios y beneficios por disciplina (check-ins, recompensas y feedback), y Comunidad que impulsa tu progreso (retos, apoyo entre pares y contenido exclusivo). Los hitos son un incentivo, no una obligación.',
     },
     {
       question: '¿Qué resultados puedo esperar en 30 días?',

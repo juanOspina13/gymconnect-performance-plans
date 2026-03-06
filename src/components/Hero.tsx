@@ -22,46 +22,45 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Conviértete en la persona que entrena incluso cuando no tiene ganas en 30 días. Este es un programa integral con acompañamiento, rutinas efectivas y un sistema que te mantiene motivado hasta el final.
+            ¿Cansado de empezar y abandonar? En 30 días dejamos atrás la inercia: rutinas simples, apoyo constante y un sistema que transforma la intención en hábito.
           </p>
 
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-            Incluye premios y recompensas por tu disciplina, coach humano + clon AI 24/7 y una comunidad que te impulsa.
+            Tres pilares diseñados para que no vuelvas a perder el ritmo: Acompañamiento 24/7, Premios por disciplina y una Comunidad que te empuja.
           </p>
 
           {/* Included packages */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
-            {/* Package 1 - Coach humano + AI */}
+            {/* Package 1 - Acompañamiento 24/7 */}
             <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-left hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-2xl">🗓️</span>
-                <h3 className="text-lg font-bold text-white">Coach humano + clon AI 24/7</h3>
+                <span className="text-2xl">🕒</span>
+                <h3 className="text-lg font-bold text-white">Acompañamiento 24/7</h3>
               </div>
                 <p className="text-gray-400 text-sm mb-3">
-                  Acompañamiento semanal con tu coach y soporte 24/7 con IA entrenada con su metodología. Incluye:
+                  Soporte continuo para que no abandones cuando la motivación falla. Incluye:
                 </p>
                 <ul className="text-gray-400 text-sm mb-3 list-disc pl-5">
-                <li>Sesión semanal personalizada con tu coach humano</li>
-                <li>Revisión de progreso y ajuste de plan</li>
-                <li>Clon AI disponible 24/7 para dudas inmediatas</li>
-                <li>Motivación y seguimiento continuo sin esperas</li>
+                <li>Check-in semanal con Coach para resolver dudas y ajustar el plan</li>
+                <li>IA disponible 24/7 para dudas y recordatorios</li>
+                <li>Ajustes rápidos para mantener consistencia</li>
               </ul>
             </div>
 
             {/* Package 2 - Premios y recompensas */}
             <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-left hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-2xl">💪</span>
-                <h3 className="text-lg font-bold text-white">Premios y recompensas por tu disciplina</h3>
+                <span className="text-2xl">🏆</span>
+                <h3 className="text-lg font-bold text-white">Premios y beneficios por disciplina</h3>
               </div>
                 <p className="text-gray-400 text-sm mb-3">
-                El sistema que hará que no abandones y ames entrenar. Incluye:
+                Recompensas y mecánicas que transforman episodios de motivación en hábitos sostenibles. Incluye:
                 </p>
                 <ul className="text-gray-400 text-sm mb-3 list-disc pl-5">
-                <li>Check-ins semanales los viernes</li>
-                <li>Llamada de inicio y cierre con feedback de tu transformación</li>
-                <li>Recompensas por cumplimiento</li>
-                <li>¡No lo haces solo!</li>
+                <li>Check-ins semanales y metas alcanzables</li>
+                <li>Llamadas de inicio y cierre con feedback accionable</li>
+                <li>Recompensas y reconocimientos por constancia</li>
+                <li>Mecánicas para romper la racha de abandono</li>
                 </ul>
               <p className="text-primary text-xs font-medium">Valor: $130.000 COP</p>
             </div>
@@ -70,16 +69,16 @@ const Hero = () => {
             <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-left hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-2xl">🌟</span>
-                <h3 className="text-lg font-bold text-white">Beneficios de la comunidad</h3>
+                <h3 className="text-lg font-bold text-white">Comunidad que impulsa tu progreso</h3>
               </div>
                 <p className="text-gray-400 text-sm mb-3">
-                No entrenas solo. Obtén beneficios exclusivos por estar en la comunidad. Incluye:
+                Rodéate de personas que sostienen tu hábito cuando la motivación falla. Incluye:
                 </p>
                 <ul className="text-gray-400 text-sm mb-3 list-disc pl-5">
-                <li>Comunidad privada con otros participantes</li>
-                <li>Retos mensuales para mantenerte motivado</li>
-                <li>Contenido exclusivo de entrenamiento y bienestar</li>
-                <li>Apoyo y motivación entre compañeros</li>
+                <li>Grupo privado con compañeros y accountability groups</li>
+                <li>Retos y dinámicas colectivas para mantenerte activo</li>
+                <li>Contenido exclusivo y apoyo entre pares</li>
+                <li>Celebraciones de logros y progreso compartido</li>
               </ul>
             </div>
           </div>
